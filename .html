@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>لعبتي</title>
+<style>
+  body { font-family: Arial; text-align: center; background: #f0f0f0; margin-top: 50px; }
+  #score { font-size: 2em; margin: 20px; }
+  button { font-size: 1.5em; padding: 10px 20px; }
+</style>
+</head>
+<body>
+<h1>لعبتي: اضغط على الزر!</h1>
+<div id="score">النقاط: 0</div>
+<button onclick="addPoint()">اضغط هنا!</button>
+
+<script>
+let score = 0;
+function addPoint() {
+    score++;
+    document.getElementById('score').innerText = "النقاط: " + score;
+}
+</script>
+</body>
+</html>
